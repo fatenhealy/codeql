@@ -414,6 +414,15 @@ function_entry_point(int id: @function ref, unique int entry_point: @stmt ref);
 
 function_return_type(int id: @function ref, int return_type: @type ref);
 
+coroutine(
+  int function: @function ref,
+  int traits: @type ref,
+  int handle: @variable ref,
+  int promise: @variable ref,
+  int new: @function ref,
+  int delete: @function ref
+);
+
 purefunctions(unique int id: @function ref);
 
 function_deleted(unique int id: @function ref);
